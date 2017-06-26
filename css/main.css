@@ -1,0 +1,515 @@
+
+/*FONTS*/
+
+
+@font-face {
+    font-family: 'roboto_slabregular';
+    src: url('robotoslab-regular-webfont.woff2') format('woff2'),
+         url('robotoslab-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto_slabbold';
+    src: url('robotoslab-bold-webfont.woff2') format('woff2'),
+         url('robotoslab-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url('roboto-black-webfont.woff2') format('woff2'),
+         url('roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('roboto-regular-webfont.woff2') format('woff2'),
+         url('roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'damionregular';
+    src: url('damion-regular-webfont.woff2') format('woff2'),
+         url('damion-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	
+}
+
+
+/*COLORS*/
+
+/*
+
+Analogous colors created in Adobe Color CC
+
+#3F5165
+#c9deea
+#EBEFC9
+#170A10
+
+https://color.adobe.com/create/color-wheel/?copy=true&base=4&rule=Analogous&selected=2&name=Copy%20of%20Dark%20Earth&mode=hex&rgbvalues=0.9215686274509803,0.9372549019607843,0.788235294117647,0.24705882352941178,0.3176470588235294,0.396078431372549,0.0901961,0.037497227432537014,0.06121396503157436,0.9215686274509803,0.9372549019607843,0.788235294117647,0.788235294117647,0.8705882352941177,0.9176470588235294&swatchOrder=0,1,2,3,4
+
+*/
+
+/*BODY*/
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+	font-family: 'robotoregular', sans-serif, helvetica;
+	font-size: 0.618rem;
+	color: #c9deea;
+    line-height: 1.6;
+	background-color: #3F5165;
+	margin: 0;
+	padding: 0;
+}
+
+.bg-header, main, footer{
+	width: 90%;
+	margin: 0 5%;	
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+	
+}
+
+.logo img {
+	width: 30%;
+	height: auto;
+	margin: 0 auto;
+	
+}
+
+
+/*NAVIGATION*/
+
+.nav-bar {
+	margin: 0;
+}
+
+.menu {
+	list-style: none;
+    text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.menu li a {
+    display: block;
+    background-color: #c9deea;
+    color: #170A10;
+    text-decoration: none;
+    padding: 0.3rem 0;
+    margin: 0 0 3px 0;
+}
+
+
+.menu li a:hover{
+    background-color: #EBEFC9;
+    color: #170A10;
+}
+
+.menu li:first-child a {
+    margin-top: 0.5rem;
+}
+
+.menu li:last-child a {
+    margin-bottom: 1rem;
+}
+
+
+/*MASTHEAD*/
+
+.masthead {
+	background-image: url(../img/hole.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	min-height: 5rem;
+}
+
+.masthead h1 {
+	font-family: 'damionregular';
+	text-align: center;
+	font-size: 2rem;
+	color: #C9C9C9;
+	text-shadow: 1px 2px #000000;
+}
+
+header {
+	margin-bottom: 0;
+}
+
+/*MAIN*/
+
+
+
+h2, h3 {
+	font-family: 'robotoblack', serif, times;
+	font-size: 0.618rem;
+	text-align: center;
+	color: #EBEFC9;
+	margin-top: 0;
+}
+
+.content-1, .content-2, .content-3{
+	padding: 0.5rem;	
+}
+
+.content-1 img {
+	border: 2px solid #000;
+}
+
+/*FOOTER*/
+
+hr {
+	border: 1.5px solid #EBEFC9;
+	margin-top: 1rem;
+}
+
+.social ul {
+	list-style: none;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.social ul li a{
+	width: calc(25% - 5px);
+    float: left;
+    margin: 0 5px 0 0;
+	background-color: #c9deea;
+	color: #170A10;
+	text-align: center;
+	padding: 0.5rem;
+	text-decoration: none;
+}
+
+.social ul li a:hover {
+	background-color: #EBEFC9;
+    color: #170A10;
+}
+
+.institutional {
+	text-align: center;
+	font-family: 'robotoblack', serif, times;
+	color: #EBEFC9;
+}
+
+/*CONTACT*/
+
+input {
+	width: 100%;
+	background-color: #fff;
+	margin-top: 0.5rem;
+	padding: 0.5rem;
+}
+
+#name:hover, #email:hover, #subject:hover, #comment:hover {
+	background-color: #e8ebe6;
+	
+}
+
+#comment {
+	height: 4rem;
+}
+
+#send {
+	background-color: #C9C9C9;
+	border: 2px solid #C9C9C9;
+}
+
+#send:hover{
+	
+	border: 2px solid #EBEFC9;
+}
+
+textarea {
+	width: 100%;
+	margin-top: 0.5rem;
+	background-color: #fff;
+	padding: 0.5rem;
+}
+
+
+	/*TABLET*/
+
+@media all and (min-width: 35rem) and (max-width: 80rem) {
+
+	
+	/*	BODY*/
+	
+	body {
+		font-size: 1rem;
+	}
+	
+	.logo img {
+		width: 25%;
+		height: auto;
+		margin: 0 auto;
+	}
+	
+	.masthead {
+		min-height: 8rem;
+		
+	}
+	
+	.masthead h1 {
+		font-size: 3rem;
+	}
+	
+	
+	.content-1 img{
+		margin: 0 1.5rem 0.5rem 0;
+		width: 40%;
+		float: left;
+	}
+	
+	h2, h3 {
+		
+		font-size: 1rem;
+	}
+	
+	
+	/*	NAVIGATION*/
+	
+	.menu li a {
+		width: calc(50% - 0.5rem);
+		float: left;
+		margin: 0 0.5rem 0 0;
+		text-align: center;
+	}
+	
+	.menu li:first-child a {
+    	margin-top: 0;
+	}
+
+	.menu li:last-child a {
+    	margin-bottom: 0;
+	}
+
+	
+	.nav-bar {
+		margin: 0.5rem 0;
+	}	
+	
+	
+	/*	FOOTER*/
+	
+	footer .fa{
+		display: block;
+	}
+	
+	.social ul li a{
+		width: auto;
+		float: left;
+		padding: 0.5rem 1rem;
+		text-decoration: none;
+	}
+	
+	.social ul {
+		text-align: center;
+		padding: 0;
+	}
+	
+	.social ul li{
+		display: inline-block;
+	}
+	
+	
+	/*	CONTACT*/
+	
+	form {
+		display: block;
+	}
+	
+	input {
+		margin-bottom: 1rem;
+	}
+	
+	textarea {
+		margin-left: 1.5rem;
+	}
+	
+	.data{
+		width: 35%;
+		float: left;
+		display: block;
+	}
+	
+	.message {
+		width: 62%;
+		float: left;
+	}
+	
+	#comment {
+		height: 9.3rem;
+	}
+	
+	.button {
+		width: 35%;
+	}
+}
+
+	
+	/*	DESKTOP*/
+	
+	
+@media all and (min-width: 80rem) {
+	
+	/*	BODY*/
+		
+	body {
+		font-size : 1.618rem;	
+	}
+
+	.logo img {
+		width: 11%;
+		height: auto;
+		margin: 5px 0 0 0;
+		float: left;
+	}
+
+
+	/*	NAVIGATION*/
+
+	.menu li a {
+		width: calc(20% - 0.5rem);
+		float: left;
+		margin: 0 0.5rem 0 0;
+		text-align: center;
+
+	}
+
+	.menu li:first-child a {
+		margin-top: 0;
+	}
+
+	.nav-bar {
+		margin-top: 0.8rem;
+	}	
+	
+	/*	MASTHEAD*/
+
+	.masthead h1 {
+		font-size: 8rem;
+		text-align: left;
+		margin: 0 0 0 5%;
+		color: #EBEFC9;
+		text-shadow: 2px 3px 5px #170A10;
+	}
+
+	.masthead {
+		min-height: 15rem;
+
+	}
+	
+	/*	MAIN*/
+	
+	h2 {
+		font-size: 1.6rem;
+		text-align: left;
+	}
+
+	.content-1 img{
+		margin: 0 1.5rem 0.5rem 0;
+		width: 40%;
+		float: left;
+
+	}
+
+	.content-2 {
+		width: 49%;
+		float: left;
+	}
+
+	.content-3 {
+		width: 49%;
+		float: right;
+	}
+
+	/*	FOOTER*/
+
+	.institutional {
+		text-align: left;
+	}
+
+	footer .fa {
+		display: block;
+	}
+
+	.social ul li a{
+		width: auto;
+		float: left;
+		padding: 0.5rem 1rem;
+	}
+
+	.social ul {
+		text-align: left;
+		padding: 0;
+	}
+
+	.social ul li {
+		display: inline-block;
+	}
+
+	h3 {
+		font-size: 1.6rem;
+		text-align: left;
+
+	}
+
+	/*	CONTACT*/
+
+	.data{
+		width: 25%;
+		float: left;
+		display: block;
+	}
+
+	.message {
+		width: 74.25%;
+		float: left;
+		margin: 0 0 -0.7rem 0.5rem;
+	}
+
+	.button {
+		width: 25%;
+	}
+
+	#send {
+		margin-top: 0;
+	}
+
+	#comment {
+		height: 7.4rem;
+	}
+}
